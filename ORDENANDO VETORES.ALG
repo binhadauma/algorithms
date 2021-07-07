@@ -1,0 +1,29 @@
+Algoritmo "Ordenando vetores"
+
+Var
+
+   v : vetor[1..4] de Inteiro
+   i, j, Aux, d : Inteiro
+
+Inicio
+
+   Para i <- 1 ate 4 faca
+      Escreval("Digite um valor:")
+      Leia(v[i])
+   FimPara
+
+   Para i <- 1 ate 3 faca
+      Para j <- i+1 ate 4 faca
+         Se (v[i] > v[j]) entao
+            aux <- v[i]
+            v[i] <- v[j]
+            v[j] <- aux
+         FimSe
+      FimPara
+   FimPara
+
+   Para i <- 1 ate 4 faca
+      Escreva("[ ",v[i]," ]")
+   FimPara
+
+Fimalgoritmo
